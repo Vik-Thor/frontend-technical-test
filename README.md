@@ -25,6 +25,9 @@ refactorisation des fonctions utils
 je fais des micro traitement de données directement dans les composants (alors que je ne devrais pas) mais pour me rassurer sur le traitement des données
 défintion du viewport mobile à 360px
 
+creation du composant message avec ces 2 variants
+creation du layout messages
+
 # Context :
 
 At leboncoin, our users can share messages about a transaction, or ask for informations about any products.

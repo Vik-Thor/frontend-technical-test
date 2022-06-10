@@ -1,0 +1,28 @@
+.message {
+  --message-padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message__body {
+  --message-background-color: lightgray;
+ 
+  --message-justify-content: start;
+
+  display: flex;
+  justify-content: var(--message-justify-content);
+  align-items: center;
+  background-color: var(--message-background-color);
+  padding: var(--message-padding);
+  border-radius: 30px;
+}
+
+.message_body--owner {
+  --message-justify-content: end;
+  --message-background-color: lightblue;
+}
+
+.message__author {
+  color: gray;
+  margin-left: var(--message-padding);
+}
