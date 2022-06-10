@@ -1,0 +1,13 @@
+.container {
+  --container-width: 100%;
+  width: var(--container-width);
+}
+
+@media (min-width: 360px) {
+  .container {
+    max-width: 1200px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

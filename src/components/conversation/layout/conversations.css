@@ -1,0 +1,12 @@
+.converstations {
+  --messages-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--messages-gap);
+}
+
+@media (min-width: 360px) {
+  .converstations {
+    max-width: 800px;
+  }
+}

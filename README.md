@@ -27,6 +27,11 @@ défintion du viewport mobile à 360px
 
 creation du composant message avec ces 2 variants
 creation du layout messages
+(perdu beaucoup de temps sur le layout message)
+
+creation du layout conversation
+creation d'un layout container
+mise en place de la vue liste conversation
 
 # Context :
 
