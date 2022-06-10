@@ -4,6 +4,14 @@ faire un tour des dépendances dans package.json
 demarrer le projet next et l'api
 first commit
 
+discerner les différents les composants réutilisables des maquettes proposé:
+- Avatar
+- Conversation
+- Message
+- Text Input
+trouver le process de connexion => getLoggedUserId
+
+
 
 # Context :
 
