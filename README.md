@@ -1,3 +1,10 @@
+Lecture de l'exo et installation des dépendences
+utiliser la dernière version LTS de node avec nvm
+faire un tour des dépendances dans package.json
+demarrer le projet next et l'api
+first commit
+
+
 # Context :
 
 At leboncoin, our users can share messages about a transaction, or ask for informations about any products.
