@@ -11,6 +11,8 @@ discerner les différents les composants réutilisables des maquettes proposé:
 - Text Input
 trouver le process de connexion => getLoggedUserId
 
+Voir si il est possible d'installer facilment un storybook sur next
+installation de storybook: importation du style global et de-optimization des images sur storybook
 
 
 # Context :
