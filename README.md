@@ -14,6 +14,9 @@ trouver le process de connexion => getLoggedUserId
 Voir si il est possible d'installer facilment un storybook sur next
 installation de storybook: importation du style global et de-optimization des images sur storybook
 
+creation du composant avatar
+ajout d'une simple function classname pour éviter une dépendance
+le sass n'est pas pris en compte sur sotrybook et je perd trop de temps pour gérer le support, je passe en css
 
 # Context :
 

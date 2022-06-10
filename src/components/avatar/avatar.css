@@ -1,0 +1,16 @@
+.avatar {
+  --avatar-size: 50px;
+  --avatar-color: grey;
+  --avatar-font-size: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  background-color: var(--avatar-color);
+  border-radius: 50%;
+
+  font-size: var(--avatar-font-size);
+}
