@@ -37,8 +37,16 @@ voir si on peut pas facilement mettre en place react query => utilisation d'un s
 
 mise en place de la vue liste conversation
 
+voir dans le doc de next comment utiliser les link et les générations de pages => ok
 
-voir dans le doc de next comment utiliser les link et les générations de pages
+j'ai un probleme d'encodage avec les link j'avance en mettant l'id de la conversation en dur
+
+terminer avec la fonction post et le refresh mais j'ai dû rater quelque chose au niveau de l'api parce que pour le post l'id de la conversation seul et le timestamp ne suffit pas
+
+pas eu le temsp de tester au niveau functionnel avec cypress
+peu amélioré  l'accessiblite avec eslint-plugin-jsx-a11y pour tout ce qui est aria-label etc
+je voulais faire un drak mode avec les css props mais pas le temps
+
 
 
 

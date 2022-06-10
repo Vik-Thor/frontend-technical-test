@@ -3,8 +3,6 @@ import React, { ReactNode } from "react";
 import "./messages.css";
 
 export interface MessagesProps {
-  name: string;
-  date: number;
   children: ReactNode;
 }
 
