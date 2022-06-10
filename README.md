@@ -31,7 +31,16 @@ creation du layout messages
 
 creation du layout conversation
 creation d'un layout container
+
+désactiver les css module imcompatible avec les import de css basique
+voir si on peut pas facilement mettre en place react query => utilisation d'un simple fetch car trop de temps perdu
+
 mise en place de la vue liste conversation
+
+
+voir dans le doc de next comment utiliser les link et les générations de pages
+
+
 
 # Context :
 

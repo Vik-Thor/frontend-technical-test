@@ -1,30 +1,42 @@
-import { FC, useEffect, useState } from 'react'
-import Head from 'next/head'
-import Image from 'next/image'
-import Logo from '../assets/lbc-logo.webp'
-import styles from '../styles/Home.module.css'
+import { FC, useEffect, useState } from "react";
+import { Conversation } from "../components/conversation/conversation";
+import { Conversations } from "../components/conversation/layout/conversations";
+import { Container } from "../components/Layout/container";
+import { getLoggedUserId } from "../utils/getLoggedUserId";
 
 const Home: FC = () => {
-  const [data, setData] = useState(null);
-  const [isloading, setIloading] = useState(false);
+  const [conversations, setConversations] = useState(null);
+  const [isloading, setLoading] = useState(false);
 
   useEffect(() => {
-    setIloading(true);
-    const users = await fetch('http://localhost:3005/users')
-    .then((res) => res.json())
-    .then((data) => {
-      setData(data)
-    })
-  }, [])
+    setLoading(true);
+    const conversations = fetch(
+      `http://localhost:3005/conversations/${getLoggedUserId()}`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setConversations(data);
+        setLoading(false);
+      });
+  }, []);
 
-  console.log(data);
-  if (isloading) return <p>en train de charger les conversations...</p>
-  if (!data) return <p>Aucune conversation</p>
-
+  console.log(conversations);
+  if (isloading) return <p>en train de charger les conversations...</p>;
+  if (!conversations) return <p>Aucune conversation</p>;
 
   return (
-    <div>coucou</div>
-  )
-}
+    <Container>
+      <Conversations>
+        {conversations.map((conversation) => (
+          <Conversation
+            key={conversation.recipientNickname}
+            nickname={conversation.recipientNickname}
+            timestamp={conversation.lastMessageTimestamp}
+          />
+        ))}
+      </Conversations>
+    </Container>
+  );
+};
 
-export default Home
+export default Home;
