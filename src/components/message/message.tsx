@@ -15,7 +15,7 @@ export const Message: React.FC<MessageProps> = ({
   owner = false,
 }) => {
   return (
-    <div className="message">
+    <div className={cx("message", owner && "message--owner")}>
       {!owner && <div className="message__author">{author}</div>}
       <div className={cx("message__body", owner && "message_body--owner")}>
         {body}

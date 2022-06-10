@@ -1,0 +1,16 @@
+.messages {
+  --messages-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--messages-gap);
+}
+
+.messages > * {
+  width: 100%;
+}
+
+@media (min-width: 360px) {
+  .messages {
+    max-width: 800px;
+  }
+}
