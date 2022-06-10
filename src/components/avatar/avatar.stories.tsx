@@ -11,3 +11,7 @@ export default {
 const Template: Story<AvatarProps> = (args) => <Avatar {...args} />;
 
 export const DefaultAvatar = Template.bind({});
+
+DefaultAvatar.args = {
+  name: 'victor'
+};

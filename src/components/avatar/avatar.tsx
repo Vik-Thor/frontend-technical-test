@@ -1,5 +1,5 @@
 import React from 'react';
-import { getFirsCharAndUpper } from '../../utils/getLoggedUserId';
+import { getFirsCharAndUpper } from '../../utils/getFirsCharAndUpper';
 
 import './avatar.css';
 

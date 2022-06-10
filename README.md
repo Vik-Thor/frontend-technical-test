@@ -18,6 +18,13 @@ creation du composant avatar
 ajout d'une simple function classname pour éviter une dépendance
 le sass n'est pas pris en compte sur sotrybook et je perd trop de temps pour gérer le support, je passe en css
 
+creation du composant conversation
+dans le meme temps choisir d'utilise BEM pour les définitions de style et mobile first et décide de partir sur px en unité en me disant qu'il y aura toujours moyen de les convertirs en em via postcss
+choisir une lib pour transcrir les timestamp en date (date)
+refactorisation des fonctions utils
+je fais des micro traitement de données directement dans les composants (alors que je ne devrais pas) mais pour me rassurer sur le traitement des données
+défintion du viewport mobile à 360px
+
 # Context :
 
 At leboncoin, our users can share messages about a transaction, or ask for informations about any products.

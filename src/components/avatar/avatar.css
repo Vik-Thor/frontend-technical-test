@@ -1,6 +1,6 @@
 .avatar {
   --avatar-size: 50px;
-  --avatar-color: grey;
+  --avatar-color: lightblue;
   --avatar-font-size: 25px;
 
   display: flex;
